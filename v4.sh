@@ -322,9 +322,9 @@ docker ps
 if [ "$pannel" != "2" ]; then
     log "5.开始安装面板"
     if [ "$image" = "1" -o "$image" = "5" ]; then
-        url="https://ghproxy.com/https://raw.githubusercontents.com/Annyoo2021/jd_v4_bot/main/v4mb.sh"
+        url="https://ghproxy.com/https://raw.githubusercontent.com/yanyuwangluo/JD_Scripts/main/v4.sh"
     else
-        url="https://ghproxy.com/https://raw.githubusercontents.com/jiulan/jd_v4/main/v4mb.sh"
+        url="https://raw.githubusercontents.com/jiulan/jd_v4/main/v4mb.sh"
     fi
     docker exec $CONTAINER_NAME bash -c "$(curl -fsSL $url)"
 fi
